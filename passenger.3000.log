@@ -1,0 +1,55 @@
+[ N 2018-03-19 07:22:32.6563 792/T1 age/Wat/WatchdogMain.cpp:1258 ]: Starting Passenger watchdog...
+[ N 2018-03-19 07:22:32.6768 795/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-03-19 07:22:32.6769 795/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-03-19 07:22:32.6836 795/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 795
+App 825 stdout: 
+[ N 2018-03-19 07:22:35.6061 795/Ta age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+App 825 stdout: 
+[ E 2018-03-19 07:22:36.2364 795/Tb age/Cor/App/Implementation.cpp:304 ]: Could not spawn process for application /app: An error occurred while starting up the preloader.
+  Error ID: 149dfa30
+  Error details saved to: /tmp/passenger-error.Uw0X0d
+  Message from application: No such file or directory @ rb_sysopen - log/error.log (Errno::ENOENT)
+  /app/config.rb:23:in `initialize'
+  /app/config.rb:23:in `open'
+  /app/config.rb:23:in `<top (required)>'
+  /app/app.rb:2:in `require'
+  /app/app.rb:2:in `<top (required)>'
+  config.ru:1:in `require'
+  config.ru:1:in `block in <main>'
+  /app/volumes/bundler/gems/rack-2.0.4/lib/rack/builder.rb:55:in `instance_eval'
+  /app/volumes/bundler/gems/rack-2.0.4/lib/rack/builder.rb:55:in `initialize'
+  config.ru:1:in `new'
+  config.ru:1:in `<main>'
+  /app/volumes/bundler/gems/passenger-5.2.1/src/helper-scripts/rack-preloader.rb:110:in `eval'
+  /app/volumes/bundler/gems/passenger-5.2.1/src/helper-scripts/rack-preloader.rb:110:in `preload_app'
+  /app/volumes/bundler/gems/passenger-5.2.1/src/helper-scripts/rack-preloader.rb:156:in `<module:App>'
+  /app/volumes/bundler/gems/passenger-5.2.1/src/helper-scripts/rack-preloader.rb:30:in `<module:PhusionPassenger>'
+  /app/volumes/bundler/gems/passenger-5.2.1/src/helper-scripts/rack-preloader.rb:29:in `<main>'
+
+
+[ E 2018-03-19 07:22:36.2455 795/T6 age/Cor/Con/CheckoutSession.cpp:285 ]: [Client 1-1] Cannot checkout session because a spawning error occurred. The identifier of the error is 149dfa30. Please see earlier logs for details about the error.
+App 842 stdout: 
+App 842 stdout: 
+[ E 2018-03-19 07:24:47.6578 795/Te age/Cor/App/Implementation.cpp:304 ]: Could not spawn process for application /app: An error occurred while starting up the preloader.
+  Error ID: 4053437f
+  Error details saved to: /tmp/passenger-error.UyE75h
+  Message from application: No such file or directory @ rb_sysopen - log/error.log (Errno::ENOENT)
+  /app/config.rb:23:in `initialize'
+  /app/config.rb:23:in `open'
+  /app/config.rb:23:in `<top (required)>'
+  /app/app.rb:2:in `require'
+  /app/app.rb:2:in `<top (required)>'
+  config.ru:1:in `require'
+  config.ru:1:in `block in <main>'
+  /app/volumes/bundler/gems/rack-2.0.4/lib/rack/builder.rb:55:in `instance_eval'
+  /app/volumes/bundler/gems/rack-2.0.4/lib/rack/builder.rb:55:in `initialize'
+  config.ru:1:in `new'
+  config.ru:1:in `<main>'
+  /app/volumes/bundler/gems/passenger-5.2.1/src/helper-scripts/rack-preloader.rb:110:in `eval'
+  /app/volumes/bundler/gems/passenger-5.2.1/src/helper-scripts/rack-preloader.rb:110:in `preload_app'
+  /app/volumes/bundler/gems/passenger-5.2.1/src/helper-scripts/rack-preloader.rb:156:in `<module:App>'
+  /app/volumes/bundler/gems/passenger-5.2.1/src/helper-scripts/rack-preloader.rb:30:in `<module:PhusionPassenger>'
+  /app/volumes/bundler/gems/passenger-5.2.1/src/helper-scripts/rack-preloader.rb:29:in `<main>'
+
+
+[ E 2018-03-19 07:24:48.0263 795/T6 age/Cor/Con/CheckoutSession.cpp:285 ]: [Client 1-2] Cannot checkout session because a spawning error occurred. The identifier of the error is 4053437f. Please see earlier logs for details about the error.
