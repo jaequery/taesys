@@ -9,10 +9,10 @@ app:
   - db:db
   - redis:redis
   environment:
-    - VIRTUAL_HOST=jaequery.com,www.jaequery.com
+    - VIRTUAL_HOST=taesys.com,www.taesys.com
     - VIRTUAL_PORT=3000
     - BUNDLE_PATH=/app/volumes/bundler
-    - RACK_ENV=development
+    - RACK_ENV=production
     - POSTGRES_PASSWORD=app
     - POSTGRES_DB=app
     - DB=postgres://postgres:app@db/app
