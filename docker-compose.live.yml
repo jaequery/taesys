@@ -9,7 +9,7 @@ app:
   - db:db
   - redis:redis
   environment:
-    - VIRTUAL_HOST=taesys.com,www.taesys.com
+    - VIRTUAL_HOST=taesys.com,www.taesys.com,taesys.jaequery.com
     - VIRTUAL_PORT=3000
     - BUNDLE_PATH=/app/volumes/bundler
     - RACK_ENV=production
